@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 80px;
+    background-color: lightblue;
+    display: flex;
+}
+.menu{
+    display: flex;
+    align-self: center;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    justify-content: center;
+    margin-left: 40px;
+}
+.menu>img{
+    align-self: center;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.menu:hover{
+    background-color: blue;
+}
+.menuC{
+    display: none;
+    padding: 20px;
+    position: absolute;
+    top: 80px;
+    background-color: blue;
+}
+.vissible{
+    display: block;
+}
+.opt{
+    padding: 15px 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.opt:hover{
+    background-color: lightblue;
+}
