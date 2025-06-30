@@ -1,10 +1,20 @@
+:root{
+    --dominant: #d5cabd;
+    --complenantory: #4e8397;
+    --ancient: #845ec2;
+    --radius-light: 0.2rem;
+}
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--dominant);
 }
 nav{
     height: 80px;
-    background-color: lightblue;
+    background-color: var(--ancient);
     display: flex;
 }
 .menu{
@@ -16,7 +26,7 @@ nav{
     height: 40px;
     cursor: pointer;
     justify-content: center;
-    margin-left: 40px;
+    margin-left: 80px;
 }
 .menu>img{
     align-self: center;
@@ -24,15 +34,21 @@ nav{
     width: 30px;
     height: 30px;
 }
-.menu:hover{
-    background-color: blue;
+.menu:hover,
+.menu>img:hover{
+    border-radius: 0.2rem;
+    background-color: var(--dominant);
 }
 .menuC{
+    width: 200px;
+    font-size: 1.2rem;
+    font-weight: bold;
     display: none;
     padding: 20px;
     position: absolute;
     top: 80px;
-    background-color: blue;
+    bottom: 0px;
+    background-color: var(--complenantory);
 }
 .vissible{
     display: block;
@@ -41,7 +57,8 @@ nav{
     padding: 15px 10px;
     cursor: pointer;
     text-align: center;
+    border-radius: var(--radius-light);
 }
 .opt:hover{
-    background-color: lightblue;
+    background-color: var(--dominant);
 }
