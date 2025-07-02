@@ -1,78 +1,75 @@
-:root{
-    --dominant: #d5cabd;
-    --complenantory: #ededed;
-    --ancient: #845ec2;
-    --radius-light: 0.2rem;
+:root {
+  --dominant: #d5cabd;
+  --complenantory: #ededed;
+  --ancient: #845ec2;
+  --radius-light: 0.2rem;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: var(--dominant);
-
+body {
+  background-color: var(--dominant);
 }
-.container{
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 80px 1fr;
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px 1fr;
 }
-main{
-    display: grid;
-    margin-left: 10px;
-    margin-right: 10px;
-    
+main {
+  display: grid;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-nav{
-    background-color: var(--ancient);
-    display: flex;
-
+nav {
+  background-color: var(--ancient);
+  display: flex;
 }
-.menu{
-    display: flex;
-    align-self: center;
-    background-color: transparent;
-    border: none;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    justify-content: center;
-    margin-left: 80px;
+.menu {
+  display: flex;
+  align-self: center;
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  justify-content: center;
+  margin-left: 80px;
 }
-.menu>img{
-    align-self: center;
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-radius: 0.2rem;
+.menu > img {
+  align-self: center;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 0.2rem;
 }
 .menu:hover,
-.menu>img:hover{
-    border-radius: 0.2rem;
-    background-color: var(--dominant);
+.menu > img:hover {
+  border-radius: 0.2rem;
+  background-color: var(--dominant);
 }
-.menuC{
-    z-index: 1;
-    position: absolute;
-    top: 80px;
-    bottom: 0px;
-    width: 200px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    display: none;
-    padding: 20px;
-    background-color: var(--complenantory);
+.menuC {
+  z-index: 1;
+  position: absolute;
+  top: 80px;
+  bottom: 0px;
+  width: 200px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: none;
+  padding: 20px;
+  background-color: var(--complenantory);
 }
-.vissible{
-    display: block;
+.vissible {
+  display: block;
 }
-.opt{
-    padding: 15px 10px;
-    cursor: pointer;
-    text-align: center;
-    border-radius: var(--radius-light);
+.opt {
+  padding: 15px 10px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: var(--radius-light);
 }
-.opt:hover{
-    background-color: var(--dominant);
+.opt:hover {
+  background-color: var(--dominant);
 }
