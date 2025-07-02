@@ -1,0 +1,88 @@
+.slide-show-container{
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    align-self: center;
+}
+img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.fade{
+    
+}
+.numbers{
+    position: absolute;
+    color: var(--dominant);
+    font-weight: bold;
+    top: 5px;
+    left: 5px;
+}
+.prev,
+.next{
+    position: absolute;
+    top: 40%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.prev{
+    left: 10px;
+    
+}
+.next{
+    right: 10px;
+}
+.prev:hover,
+.next:hover{
+    color: var(--ancient);
+    background-color: rgba(0,0,0, 0.8);
+}
+.text{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 40px;
+}
+.dots-container{
+    text-align: center;
+}
+.dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    margin: 3px;
+    text-align: center;
+    cursor: pointer;
+    transition: ease 0.3s all;
+}
+.dot:hover{
+    background-color: var(--ancient);
+}
+.active{
+    background-color: var(--ancient);
+}
+
+@media screen and (max-width: 400px){
+    .dot{
+        width: 10px;
+        height: 10px;
+    }
+    .text{
+        font-size: 0.8rem;
+    }
+    .prev,
+    .next{
+        font-size: 1rem;
+    }
+}

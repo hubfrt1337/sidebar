@@ -1,6 +1,6 @@
 :root{
     --dominant: #d5cabd;
-    --complenantory: #4e8397;
+    --complenantory: #ededed;
     --ancient: #845ec2;
     --radius-light: 0.2rem;
 }
@@ -11,11 +11,23 @@
 }
 body{
     background-color: var(--dominant);
+
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+}
+main{
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    
 }
 nav{
-    height: 80px;
     background-color: var(--ancient);
     display: flex;
+
 }
 .menu{
     display: flex;
@@ -33,6 +45,7 @@ nav{
     display: block;
     width: 30px;
     height: 30px;
+    border-radius: 0.2rem;
 }
 .menu:hover,
 .menu>img:hover{
@@ -40,14 +53,15 @@ nav{
     background-color: var(--dominant);
 }
 .menuC{
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    bottom: 0px;
     width: 200px;
     font-size: 1.2rem;
     font-weight: bold;
     display: none;
     padding: 20px;
-    position: absolute;
-    top: 80px;
-    bottom: 0px;
     background-color: var(--complenantory);
 }
 .vissible{
